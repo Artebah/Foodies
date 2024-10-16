@@ -17,6 +17,8 @@ const config: Config = {
       },
       colors: {
         "light-yellow": "#ddd6cb",
+        "custom-orange": "#f9572a",
+        "custom-yellow": "#ffc905",
       },
     },
   },
