@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main>
-      <h1 style={{ color: "white", textAlign: "center" }}>Time to get started!</h1>
+      <h1 className="text-white text-center mt-11 text-xl font-bold">Time to get started!</h1>
       <p>
         <Link href="/meals">Meals</Link>
       </p>
