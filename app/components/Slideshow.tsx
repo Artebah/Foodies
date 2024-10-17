@@ -10,6 +10,7 @@ import macncheeseImg from "@/assets/macncheese.jpg";
 import pizzaImg from "@/assets/pizza.jpg";
 import schnitzelImg from "@/assets/schnitzel.jpg";
 import tomatoSaladImg from "@/assets/tomato-salad.jpg";
+import classNames from "classnames";
 
 const images = [
   { image: burgerImg, alt: "A delicious, juicy burger" },
@@ -33,12 +34,14 @@ export default function Slideshow() {
   }, []);
 
   return (
-    <div>
+    <div className="relative">
       {images.map((image, index) => (
         <Image
           key={index}
           src={image.image}
-          className={index === currentImageIndex ? "block rounded-md h-80" : "hidden"}
+          className={classNames("absolute opacity-0 -rotate-6", {
+            "rounded-md h-80 opacity-100 rotate-0 transition-all": index === currentImageIndex,
+          })}
           alt={image.alt}
         />
       ))}
