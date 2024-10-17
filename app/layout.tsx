@@ -21,7 +21,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
       <body className="font-quicksand">
         <MainHeaderBackground />
         <MainHeader />
-        <main>{children}</main>
+        <main className="_container flex gap-7 mt-10">{children}</main>
       </body>
     </html>
   );
