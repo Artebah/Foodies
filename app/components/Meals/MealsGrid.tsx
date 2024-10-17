@@ -1,14 +1,13 @@
 import React from "react";
 import { MealItem } from "./MealItem";
 import { type Meal } from "@/app/types/Meal";
+import { getMeals } from "@/lib/meals";
 
-interface Props {
-  meals: Meal[];
-}
+export const MealsGrid = async () => {
+  const meals: Meal[] = await getMeals();
 
-export const MealsGrid = ({ meals }: Props) => {
   return (
-    <div>
+    <div className="grid grid-cols-3 gap-10">
       {meals.map((meal) => (
         <MealItem key={meal.id} {...meal} />
       ))}

@@ -17,7 +17,7 @@ export const metadata = {
 export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html className={fontQuicksand.variable} lang="en">
-      <body className="font-quicksand">
+      <body className="font-quicksand overflow-x-hidden">
         <MainHeaderBackground />
         <MainHeader />
         <main className="_container flex gap-7 mt-10">{children}</main>
