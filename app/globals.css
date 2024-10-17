@@ -51,3 +51,26 @@ body {
   font-weight: 500;
   color: #ddd8d8;
 }
+
+.navlink {
+  transition: all 0.3s ease 0s;
+  font-weight: 700;
+  font-size: 1rem;
+}
+.navlink:hover {
+  text-shadow: 0 0 12px rgb(255, 208, 91);
+}
+.navlink.active,
+.navlink:hover {
+  color: #ff8a05;
+}
+.navlink.active:hover {
+  text-shadow: none;
+}
+
+.yellow-orange-gradient-highligh {
+  transition: all 0.3s ease 0s;
+}
+.yellow-orange-gradient-highligh:hover {
+  box-shadow: 0px 0px 7px 0px #f9572a;
+}

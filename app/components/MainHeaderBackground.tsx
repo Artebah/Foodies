@@ -15,11 +15,11 @@ const MainHeaderBackground = () => {
             id="paint0_linear_1_3"
             x1="0"
             y1="0"
-            x2="144000"
+            x2="1440"
             y2="0"
             gradientUnits="userSpaceOnUse">
-            <stop stopColor="#59453C" />
-            <stop offset="1" stopColor="#8F3A09" />
+            <stop offset="0%" stopColor="#59453C" />
+            <stop offset="100%" stopColor="#8F3A09" />
           </linearGradient>
           <clipPath id="clip0_1_3">
             <rect width="1440" height="120" fill="white" />

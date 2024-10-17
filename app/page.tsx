@@ -15,11 +15,11 @@ export default function Home() {
           <p className="text-white pt-3 text-sm">Taste & share food from all over the world.</p>
         </div>
         <div className="mt-5">
-          <Link className="text-custom-yellow mr-4" href="/community">
+          <Link className="navlink text-custom-yellow mr-4" href="/community">
             Join the Community
           </Link>
           <Link
-            className="bg-gradient-to-r from-custom-orange to-custom-yellow px-2 py-1 rounded-md text-white"
+            className="yellow-orange-gradient-highligh bg-gradient-to-r from-custom-orange to-custom-yellow px-2 py-1 rounded-md text-white shadow-md"
             href="/meals">
             Explore Meals
           </Link>
