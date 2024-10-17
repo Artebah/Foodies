@@ -1,6 +1,7 @@
 import React, { Suspense } from "react";
 import ButtonLink from "../components/ButtonLink";
 import { MealsGrid } from "../components/Meals";
+import { Metadata } from "next";
 
 const MealsPage = async () => {
   return (
@@ -21,6 +22,11 @@ const MealsPage = async () => {
       </div>
     </div>
   );
+};
+
+export const metadata: Metadata = {
+  title: "Meals",
+  description: "Choose your favorite recipe and cook it yourself. It is easy and fun!",
 };
 
 export default MealsPage;

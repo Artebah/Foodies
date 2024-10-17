@@ -1,10 +1,11 @@
 import Link from "next/link";
 import Slideshow from "./components/Slideshow";
 import ButtonLink from "./components/ButtonLink";
+import { Metadata } from "next";
 
 export default function Home() {
   return (
-    <>
+    <div className="flex gap-7 h-80">
       <div className="basis-96 shrink-0">
         <Slideshow />
       </div>
@@ -22,6 +23,11 @@ export default function Home() {
           <ButtonLink href="/meals">Explore Meals</ButtonLink>
         </div>
       </div>
-    </>
+    </div>
   );
 }
+
+export const metadata: Metadata = {
+  title: "NextLevel Food",
+  description: "Taste & share food from all over the world",
+};

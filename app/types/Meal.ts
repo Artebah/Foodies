@@ -5,4 +5,6 @@ export interface Meal {
   summary: string;
   slug: string;
   creator: string;
+  instructions: string;
+  creator_email: string;
 }

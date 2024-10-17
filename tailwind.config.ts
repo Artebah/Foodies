@@ -22,6 +22,7 @@ const config: Config = {
         "card-bg-from": "#2c1e19",
         "card-bg-to": "#25200f",
         "dark-text": "#cfa69b",
+        "stone-gray": "#6e6464",
       },
     },
   },

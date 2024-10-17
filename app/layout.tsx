@@ -20,7 +20,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
       <body className="font-quicksand overflow-x-hidden">
         <MainHeaderBackground />
         <MainHeader />
-        <main className="_container flex gap-7 mt-10">{children}</main>
+        <main className="_container mt-10">{children}</main>
       </body>
     </html>
   );
