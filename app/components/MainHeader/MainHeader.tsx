@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "@/assets/logo.png";
-import NavLink from "./NavLink";
+import NavLink from "../NavLink";
 
 const MainHeader = () => {
   return (
@@ -25,4 +25,4 @@ const MainHeader = () => {
   );
 };
 
-export default MainHeader;
+export { MainHeader };

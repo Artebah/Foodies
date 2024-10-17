@@ -1,8 +1,7 @@
 import "./globals.css";
 import { PropsWithChildren } from "react";
 import { Quicksand } from "next/font/google";
-import MainHeader from "./components/MainHeader";
-import MainHeaderBackground from "./components/MainHeaderBackground";
+import { MainHeaderBackground, MainHeader } from "./components/MainHeader";
 
 const fontQuicksand = Quicksand({
   subsets: ["latin"],

@@ -30,4 +30,4 @@ const MainHeaderBackground = () => {
   );
 };
 
-export default MainHeaderBackground;
+export { MainHeaderBackground };
