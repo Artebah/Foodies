@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Slideshow from "./components/Slideshow";
-import ButtonLink from "./components/ButtonLink";
+import { Slideshow } from "./components/Slideshow";
+import { ButtonLink } from "./components/ButtonLink";
 import { Metadata } from "next";
 
 export default function Home() {

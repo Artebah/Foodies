@@ -14,7 +14,7 @@ export const metadata = {
   description: "Delicious meals, shared by a food-loving community.",
 };
 
-export default function RootLayout({ children }: PropsWithChildren) {
+const RootLayout = ({ children }: PropsWithChildren) => {
   return (
     <html className={fontQuicksand.variable} lang="en">
       <body className="font-quicksand overflow-x-hidden">
@@ -24,4 +24,6 @@ export default function RootLayout({ children }: PropsWithChildren) {
       </body>
     </html>
   );
-}
+};
+
+export default RootLayout;

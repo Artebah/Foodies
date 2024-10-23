@@ -1,10 +1,9 @@
 import { type Meal } from "@/types/Meal";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
-import ButtonLink from "../ButtonLink";
+import { ButtonLink } from "../ButtonLink";
 
-export const MealItem = ({ creator, image, slug, summary, title }: Meal) => {
+const MealItem = ({ creator, image, slug, summary, title }: Meal) => {
   return (
     <article className="text-white text-xs flex flex-col rounded-md shadow-lg shadow-stone-900 overflow-hidden bg-gradient-to-r from-card-bg-from to-card-bg-to">
       <header>
@@ -25,3 +24,5 @@ export const MealItem = ({ creator, image, slug, summary, title }: Meal) => {
     </article>
   );
 };
+
+export { MealItem };

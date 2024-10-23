@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 
-export default function Error({ error, reset }: { error: Error & { digest?: string }; reset: () => void }) {
+const Error = ({ error, reset }: { error: Error & { digest?: string }; reset: () => void }) => {
   useEffect(() => {
     console.log(error.message);
   }, [error]);
@@ -14,4 +14,6 @@ export default function Error({ error, reset }: { error: Error & { digest?: stri
       <p>{error.message}</p>
     </div>
   );
-}
+};
+
+export default Error;

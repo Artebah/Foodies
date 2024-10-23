@@ -3,11 +3,11 @@ import { MealItem } from "./MealItem";
 import { type Meal } from "@/types/Meal";
 import { getMeals } from "@/lib/meals";
 
-export const MealsGrid = async () => {
+const MealsGrid = async () => {
   const meals: Meal[] = await getMeals();
 
   if (!meals) {
-    return <div>Error loading meals</div>
+    return <div>Error loading meals</div>;
   }
 
   return (
@@ -18,3 +18,5 @@ export const MealsGrid = async () => {
     </div>
   );
 };
+
+export { MealsGrid };

@@ -16,4 +16,4 @@ const ButtonLink = ({ children, href }: Props) => {
   );
 };
 
-export default ButtonLink;
+export { ButtonLink };

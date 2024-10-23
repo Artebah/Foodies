@@ -10,7 +10,7 @@ interface Props {
   name: string;
 }
 
-export function ImagePicker({ label, name }: Props) {
+const ImagePicker = ({ label, name }: Props) => {
   const [pickedImage, setPickedImage] = useState<string | null>(null);
   const imageInputRef = useRef<HTMLInputElement>(null);
 
@@ -67,4 +67,6 @@ export function ImagePicker({ label, name }: Props) {
       </div>
     </div>
   );
-}
+};
+
+export { ImagePicker };

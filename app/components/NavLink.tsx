@@ -25,4 +25,4 @@ const NavLink = ({ children, href }: Props) => {
   );
 };
 
-export default NavLink;
+export { NavLink };

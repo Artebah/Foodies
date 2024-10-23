@@ -1,5 +1,5 @@
 import React, { Suspense } from "react";
-import ButtonLink from "../components/ButtonLink";
+import { ButtonLink } from "../components/ButtonLink";
 import { MealsGrid } from "../components/Meals";
 import { Metadata } from "next";
 

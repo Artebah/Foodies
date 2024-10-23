@@ -8,7 +8,7 @@ interface Props {
   params: { slug: string };
 }
 
-export default function MealDetailsPage({ params }: Props) {
+const MealDetailsPage = ({ params }: Props) => {
   const meal: Meal = getMeal(params.slug);
 
   if (!meal) {
@@ -44,7 +44,9 @@ export default function MealDetailsPage({ params }: Props) {
       </div>
     </div>
   );
-}
+};
+
+export default MealDetailsPage;
 
 export async function generateMetadata({ params }: Props) {
   const meal = await getMeal(params.slug);
