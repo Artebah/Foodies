@@ -2,7 +2,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 
 import { getMeal } from "@/lib/meals";
-import { Meal } from "@/app/types/Meal";
+import { Meal } from "@/types/Meal";
 
 interface Props {
   params: { slug: string };

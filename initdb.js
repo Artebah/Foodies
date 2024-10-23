@@ -173,21 +173,26 @@ db.prepare(
 ).run();
 
 async function initData() {
-  const stmt = db.prepare(`
-      INSERT INTO meals VALUES (
-         null,
-         @slug,
-         @title,
-         @image,
-         @summary,
-         @instructions,
-         @creator,
-         @creator_email
-      )
-   `);
+  try {
+    const stmt = db.prepare(`
+         INSERT INTO meals VALUES (
+            null,
+            @slug,
+            @title,
+            @image,
+            @summary,
+            @instructions,
+            @creator,
+            @creator_email
+         )
+      `);
 
-  for (const meal of dummyMeals) {
-    stmt.run(meal);
+    for (const meal of dummyMeals) {
+      stmt.run(meal);
+    }
+  } catch (error) {
+    console.error("Error inserting meals into database:", error);
+    throw error;
   }
 }
 

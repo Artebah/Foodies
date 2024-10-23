@@ -3,7 +3,7 @@ import ButtonLink from "../components/ButtonLink";
 import { MealsGrid } from "../components/Meals";
 import { Metadata } from "next";
 
-const MealsPage = async () => {
+const MealsPage = () => {
   return (
     <div className="w-full">
       <div>

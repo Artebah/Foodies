@@ -1,4 +1,4 @@
-import { type Meal } from "@/app/types/Meal";
+import { type Meal } from "@/types/Meal";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
